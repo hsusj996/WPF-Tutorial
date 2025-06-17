@@ -44,6 +44,7 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
@@ -57,7 +58,16 @@
     <None Include="ex60.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ex61.cs" />
+    <None Include="ex61.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ex70.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ex71.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ex72.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
