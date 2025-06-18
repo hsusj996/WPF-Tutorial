@@ -1,0 +1,15 @@
+﻿<Window x:Class="STACK_PANEL.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:STACK_PANEL"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel Margin="20" Orientation="Horizontal">
+        <Button Margin="3">button 1</Button>
+        <Button Margin="10, 20, 30, 40">button 2</Button>
+        <Button>button 3</Button>
+        <CheckBox HorizontalAlignment="Center">동의</CheckBox>
+    </StackPanel>
+</Window>

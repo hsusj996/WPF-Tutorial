@@ -1,0 +1,41 @@
+﻿<Window x:Class="GRIDSPLITTER.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GRIDSPLITTER"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Row="0" Grid.Column="0">button1</Button>
+        <Button Grid.Row="2" Grid.Column="0">button2</Button>
+        <Button Grid.Row="0" Grid.Column="2">button3</Button>
+
+        <GridSplitter Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" Width="5" HorizontalAlignment="Center" VerticalAlignment="Stretch"></GridSplitter>
+        <GridSplitter Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Height="5" VerticalAlignment="Center" HorizontalAlignment="Stretch"></GridSplitter>
+
+        <Grid Grid.Row="2" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0">Button4</Button>
+            <Button Grid.Column="2">Button5</Button>
+            <GridSplitter Grid.Column="1" Width="5" HorizontalAlignment="Center" VerticalAlignment="Stretch"></GridSplitter>
+        </Grid>
+
+    </Grid>
+</Window>
