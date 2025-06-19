@@ -1,0 +1,18 @@
+﻿<Window x:Class="BACKGROUNDANDEVENT.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BACKGROUNDANDEVENT"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        Background="Green"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown">
+
+    <Canvas Background="Transparent" MouseLeftButtonDown="Canvas_MouseLeftButtonDown">
+        <Rectangle Canvas.Left="50" Canvas.Top="50"
+                   Width="100" Height="100" Fill="Red"
+                   MouseLeftButtonUp="Rectangle_MouseLeftButtonUp"/>
+
+    </Canvas>
+</Window>
