@@ -1,0 +1,9 @@
+﻿<Application x:Class="ELEMENTBINDING.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ELEMENTBINDING"
+             StartupUri="Ex3Window.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

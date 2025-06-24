@@ -1,0 +1,15 @@
+﻿<Window x:Class="DATABINDING1.Ex1Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DATABINDING1"
+        mc:Ignorable="d"
+        Title="Ex1Window" Height="450" Width="800">
+
+    <StackPanel x:Name="stackpanel">
+        <TextBox Text="{Binding Path=Name}" FontSize="30" />
+        <TextBox Text="{Binding Path=Address}" FontSize="30" />
+        <Button Content="ClickMe" Click="Button_Click"/>
+    </StackPanel>
+</Window>
